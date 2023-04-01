@@ -18,11 +18,19 @@ class Person:
       self.money += 1
       days -= 1
 
+  def rest(self, days):
+    while days != 0:
+      self.money += -1
+      days -= 1
+      
+
 me = Person('Cold', 15, 175)
 friend = Person('Coal', 16, 180)
 
 print(me.money)
 me.work(3)
+me.rest(1)
+me.work(2)
 print(me.money)
 
 print(me.name)
