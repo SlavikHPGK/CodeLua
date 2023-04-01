@@ -1,4 +1,3 @@
-# Класифікація обєктів
 
 class Person:
   age = 15
@@ -7,28 +6,15 @@ class Person:
   name = "Cold"
   
 
-me = Person()
+  def __init__(self, name, age, height):
+    self.name = name
+    self.age = age
+    self.height = height
 
-class Friend:
-  age = 16
-  height = 180
-  isMale = True
-  name = "Coal"
+me = Person('Cold', 15, 175)
+friend = Person('Coal', 16, 180)
 
-friend = Friend()
-
-class Cat:
-  age = 9
-  height = 30
-  isFemale = True
-  name = "Diamond"
-  socialstatus = "Social-Nacionalist"
-
-cat = Cat()
-
-def __init__(self, name, age):
-  self.name = name
-  self.age = age
+print(me.height)
 
 
 
