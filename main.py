@@ -26,13 +26,10 @@ class Cat:
 
 cat = Cat()
 
-# вивід
+def __init__(self, name, age):
+  self.name = name
+  self.age = age
 
-print(me)
-print(friend)
-print(cat)
-print(me.age)
-print(friend.height)
-print(cat.isFemale)
-print(me.name)
-print(cat.socialstatus)
+
+
+
